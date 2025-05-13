@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OnlyVikki</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Lobster&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Raleway', sans-serif;
+      background: linear-gradient(180deg, #fff1f7, #ffeaf5);
+      color: #d4006e;
+      overflow-x: hidden;
+    }
+    h2 {
+      font-family: 'Lobster', cursive;
+      font-size: 4em;
+      color: #ff0080;
+      text-align: center;
+      text-shadow: 0 0 30px #ffd6ec, 0 0 20px #ff4fa2;
+      margin: 70px 10px 10px;
+      animation: fadeIn 1.5s ease;
+    }
+    .intro {
+      text-align: center;
+      margin: 30px 20px 50px;
+      max-width: 90%;
+      animation: fadeInUp 2s ease;
+    }
+    .intro .line1 {
+      font-family: 'Comfortaa', cursive;
+      font-size: 1.7em;
+      color: #ff77b7;
+      text-shadow: 0 0 5px #ffb6c1;
+      margin-bottom: 10px;
+    }
+    .intro .line2 {
+      font-family: 'Comfortaa', cursive;
+      font-size: 1.5em;
+      color: #ff66a3;
+      text-shadow: 0 0 5px #ffb6c1;
+    }
+    .plans {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      padding: 10px;
+      animation: fadeInUp 2s ease;
+    }
+    .plan {
+      width: 90%;
+      max-width: 400px;
+      border-radius: 50px;
+      padding: 25px;
+      background: linear-gradient(145deg, #ffeaf5, #ffffff);
+      box-shadow: 0 0 30px rgba(255, 182, 193, 0.6);
+      transition: all 0.5s ease-in-out;
+      border: 3px solid transparent;
+      animation: fadeInUp 2s ease;
+    }
+    .plan:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 40px rgba(255, 105, 180, 0.8);
+    }
+    .plan h3 {
+      font-size: 1.8em;
+      margin-bottom: 15px;
+      color: #ff1493;
+    }
+    .plan h3 .emoji {
+      font-size: 1.2em;
+      margin-right: 6px;
+    }
+    .plan ul {
+      list-style: none;
+      padding: 0;
+      font-size: 1em;
+      line-height: 1.6em;
+      color: #d4006e;
+    }
+    .plan ul li::before {
+      content: "✨ ";
+    }
+    .plan ul li.nobullet::before {
+      content: none;
+    }
+    .plan button {
+      margin-top: 20px;
+      padding: 14px 28px;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      font-size: 1em;
+      font-weight: bold;
+      background: linear-gradient(135deg, #ff77b7, #ffc0cb);
+      color: white;
+      box-shadow: 0 0 20px rgba(255, 182, 193, 0.9);
+      transition: 0.5s ease;
+    }
+    .plan button:hover {
+      background: linear-gradient(135deg, #ff4fa2, #ff77b7);
+      box-shadow: 0 0 30px rgba(255, 105, 180, 1);
+      transform: scale(1.05);
+    }
+    .premium {
+      background: linear-gradient(145deg, #ffd6ec, #ffffff);
+      border: 3px solid #ff4fa2;
+      box-shadow: 0 0 40px rgba(255, 105, 180, 0.9);
+    }
+    .premium button {
+      background: linear-gradient(135deg, #ff4fa2, #ff1493);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 0.3; }
+      100% { opacity: 1; }
+    }
+    .plus-blink {
+      animation: blink 1s infinite;
+    }
+  </style>
+</head>
+<body>
+  <h2>OnlyVikki 💖</h2>
+  <div class="intro">
+    <div class="line1">Теперь мы с вами будем ещё ближе 🍒</div>
+    <div class="line2">Ты увидишь то, что скрыто от посторонних глаз... только для своих 💌</div>
+  </div>
+
+  <div class="plans">
+    <div class="plan">
+      <h3><span class="emoji">👀</span>Подглядывающий — $10</h3>
+      <ul>
+        <li>🔒 Доступ к закрытому Telegram-каналу</li>
+        <li>📸 Живой лайфстайл, простые моменты, без постановки</li>
+        <li>💬 Контент, который не выходит в TikTok — личное и искреннее</li>
+        <li>☁️ Мысли, которые я не пишу в соцсетях. Сближаемся в моём ритме</li>
+        <li>💰 Цена указана за месяц</li>
+      </ul>
+      <button onclick="location.href='https://your-payment-link.com/10usd'">Присоединиться 💕</button>
+    </div>
+
+    <div class="plan premium">
+      <h3><span class="emoji">💎</span>Особенный — $30</h3>
+      <ul>
+        <li>🔒 Доступ к закрытому Telegram-каналу</li>
+        <li>📸 Живой лайфстайл, простые моменты, без постановки</li>
+        <li>💬 Контент, который не выходит в TikTok — личное и искреннее</li>
+        <li>☁️ Мысли, которые я не пишу в соцсетях. Сближаемся в моём ритме</li>
+        <li class="nobullet plus-blink" style="text-align:center; font-weight: bold;">+</li>
+        <li><strong>👑 VIP-канал с эксклюзивными фото и видео</strong></li>
+        <li><strong>💬 Чат для общения, обсуждения и совместных идей</strong></li>
+        <li><strong>👀 Ближе, откровеннее и чуточку глубже — по-настоящему</strong></li>
+        <li><strong>📷 Закулисье: мини-опросы, голосования, влияние на контент</strong></li>
+        <li><strong>🎁 Небольшие сюрпризы от меня — только для VIP-участников</strong></li>
+        <li>💰 Цена указана за месяц</li>
+      </ul>
+      <button onclick="location.href='https://your-payment-link.com/30usd'">Стать VIP 🌟</button>
+    </div>
+
+    <div class="plan">
+      <h3><span class="emoji">📝</span>Хочу сигну — $20</h3>
+      <ul>
+        <li>💖 Именная сигна — фото специально для тебя</li>
+        <li>🎀 Выбирай стиль: милая, романтичная или чуть дерзкая</li>
+        <li>⚡ Быстро — в течение суток, с настроением и душой</li>
+        <li><strong>🎯 Только 10 сигн в неделю!</strong> Успей попасть в список — добавлю бонус ✨</li>
+        <li>💰 Цена указана за месяц</li>
+      </ul>
+      <button onclick="location.href='https://your-payment-link.com/signa20usd'">Заказать сигну 💌</button>
+    </div>
+
+    <div class="plan premium">
+      <h3><span class="emoji">🔞</span>Пообщаемся? — $100</h3>
+      <ul>
+        <li>💬 Это не просто чат… Это доверие, поддержка, флирт, обсуждение всего, что волнует</li>
+        <li>♾️ Я рядом… только для тебя</li>
+        <li>🚫 Ограниченное количество мест — всего 3. Успей 😉</li>
+        <li>🔥 Максимум внимания — весь фокус на тебе</li>
+        <li>💰 Цена указана за месяц</li>
+      </ul>
+      <button onclick="location.href='https://your-payment-link.com/100usd'">Написать мне 🥵</button>
+    </div>
+  </div>
+</body>
+</html>
